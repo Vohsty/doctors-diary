@@ -39,3 +39,18 @@ CREATE TABLE `doctor` (
 
 INSERT INTO `doctor` (`id`, `firstName`, `lastName`, `email`, `phone_no`, `password`) VALUES
 (1, 'steve', 'Bor', 'stevebor@moringa.com', 0700000000,'12');
+
+-- ---------------------------------------------------------
+
+--
+-- Table structure for table `Nurse`
+--
+
+CREATE TABLE `nurse` (
+  `id` int(100) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `lastName` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phoneNo` int(100) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
