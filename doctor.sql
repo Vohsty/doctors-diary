@@ -79,3 +79,12 @@ CREATE TABLE `patient` (
 -- 
 -- Table structure for table `message`
 -- 
+
+CREATE TABLE `messages` (
+  `id` int(100) NOT NULL,
+  `sender` varchar(25) NOT NULL,
+  `receiver` varchar(25) NOT NULL,
+  `message` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
