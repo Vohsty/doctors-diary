@@ -82,8 +82,8 @@ CREATE TABLE `patient` (
 
 CREATE TABLE `messages` (
   `id` int(100) NOT NULL,
-  `sender` varchar(25) NOT NULL,
-  `receiver` varchar(25) NOT NULL,
+  `firstName` varchar(25) NOT NULL,
+  `lastName` varchar(25) NOT NULL,
   `message` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
