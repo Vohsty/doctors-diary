@@ -54,3 +54,28 @@ CREATE TABLE `nurse` (
   `phoneNo` int(100) NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- -----------------------------------------------------
+
+-- 
+-- Table structure for table `patient`
+-- 
+
+CREATE TABLE `patient` (
+  `id` int(100) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `lastName` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phoneNo` int(100) NOT NULL,
+  `dob` date NOT NULL,
+  `gender` varchar(25) NOT NULL,
+  `disease` text NOT NULL,
+  `medicine` text NOT NULL,
+  `password` varchar(255) NOT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- -------------------------------------------------
+
+-- 
+-- Table structure for table `message`
+-- 
