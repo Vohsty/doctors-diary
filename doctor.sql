@@ -43,7 +43,7 @@ INSERT INTO `doctor` (`id`, `firstName`, `lastName`, `email`, `phone_no`, `passw
 -- ---------------------------------------------------------
 
 --
--- Table structure for table `Nurse`
+-- Table structure for table `nurse`
 --
 
 CREATE TABLE `nurse` (
@@ -77,7 +77,7 @@ CREATE TABLE `patient` (
 -- -------------------------------------------------
 
 -- 
--- Table structure for table `message`
+-- Table structure for table `messages`
 -- 
 
 CREATE TABLE `messages` (
@@ -88,3 +88,66 @@ CREATE TABLE `messages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
+
+--
+-- Indexes for tables
+--
+
+--
+-- Indexes for table `doctor`
+--
+ALTER TABLE `doctor`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `nurse`
+--
+ALTER TABLE `nurse`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `patient`
+--
+ALTER TABLE `patient`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `messages`
+--
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+-- -----------------------------------------------
+
+--
+-- AUTO_INCREMENT for table `doctor`
+--
+ALTER TABLE `doctor`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `nurse`
+--
+ALTER TABLE `nurse`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+--
+-- AUTO_INCREMENT for table `patient`
+--
+ALTER TABLE `patient`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+--
+-- AUTO_INCREMENT for table `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
