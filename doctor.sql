@@ -123,7 +123,7 @@ CREATE TABLE `cancer` (
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `treatment`
+-- Dumping data for table `cancer`
 --
 
 INSERT INTO `cancer` (`id`, `cancerType`)VALUES
