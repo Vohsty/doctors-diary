@@ -25,15 +25,19 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `doctor` (
-
+  `id` int(100) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phoneNo` int(100) NOT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `doctor`
 --
 
-INSERT INTO `doctor` (`id`, `firstName`, `lastName`, `email`, `phone_no`, `password`) VALUES
-(1, 'steve', 'Bor', 'stevebor@moringa.com', 0700000000,'12');
+INSERT INTO `doctor` (`id`, `name`, `email`, `phoneNo`, `password`) VALUES
+(1, 'Steve Bor', 'stevebor@moringa.com', 0700000000,'12');
 
 -- ---------------------------------------------------------
 
@@ -168,4 +172,49 @@ ALTER TABLE `treatment`
 -- Indexes for table `cancer`
 --
 ALTER TABLE `cancer`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`); 
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `doctor`
+--
+ALTER TABLE `doctor`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `nurse`
+--
+ALTER TABLE `nurse`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+--
+-- AUTO_INCREMENT for table `patient`
+--
+ALTER TABLE `patient`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+--
+-- AUTO_INCREMENT for table `appointment`
+--
+ALTER TABLE `appointment`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+--
+-- AUTO_INCREMENT for table `treatment`
+--
+ALTER TABLE `treatment`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+--
+-- AUTO_INCREMENT for table `cancer`
+--
+ALTER TABLE `cancer`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
