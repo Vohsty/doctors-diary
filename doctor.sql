@@ -37,7 +37,7 @@ CREATE TABLE `doctor` (
 -- Dumping data for table `doctor`
 --
 
-INSERT INTO `doctor` (`id`, `firstName`, `lastName`, `email`, `phone_no`, `password`) VALUES
+INSERT INTO `doctor` (`id`, `firstName`, `lastName`, `email`, `phoneNo`, `password`) VALUES
 (1, 'steve', 'Bor', 'stevebor@moringa.com', 0700000000,'12');
 
 -- ---------------------------------------------------------
