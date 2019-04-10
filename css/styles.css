@@ -1,0 +1,19 @@
+.jumbotron{
+background-image: url("../img/images/pulse.jpg");
+height: 200px;
+background-size: 600px;
+margin-top: 150px;
+}
+
+.ward{
+background-color: red;
+width: 600px;
+height: 500px;
+}
+
+.hosp{
+width: 500px;
+height: 500px;
+margin-left: 800px;
+background-image: url("../img/images/hospital.jpg");
+}
